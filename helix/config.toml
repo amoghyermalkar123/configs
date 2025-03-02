@@ -1,0 +1,34 @@
+theme = "ayu_dark"
+
+[editor]
+line-number = "relative"
+mouse = false
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[keys.normal]
+C-s = ":w"
+C-f = [":new", ":insert-output lf-pick", "split_selection_on_newline", "goto_file", "goto_last_modification", "goto_last_modified_file", ":buffer-close!", ":theme nord", ":theme default"]
+C-e = ["scroll_down", "move_line_down"]
+C-y = ["scroll_up", "move_line_up"]
+C-c = "normal_mode"
+C-j = "save_selection"
+
+[keys.insert]
+"C-c" = "normal_mode"
+
+[keys.select]
+"C-c" = "normal_mode"

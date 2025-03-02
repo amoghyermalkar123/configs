@@ -1,0 +1,11 @@
+[[language]]
+name = "zig"
+auto-format = false
+
+[[language]]
+name = "javascript"
+injection-regex = "(javascript|js|jsx)"
+file-types = ["js", "mjs", "cjs"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "prettier", args = ["--parser", "javascript"] }
+auto-format = true
